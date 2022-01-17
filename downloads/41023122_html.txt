@@ -196,10 +196,21 @@ doc["b4"].bind('click', b4_inp)
 run()
 #1111111111111111111111111111111111111111111111111111
 // ]]></script>
-上課內容有<button id="aaa">紅點</button> ,<button id="bbb">座標&nbsp;</button> , <button id="ccc">snake</button></p>
-<p>期末考:<button id="a1">final1</button> <button id="a2">final2</button> <button id="b3">final3</button>&nbsp;</p>
-<p>而<button id="b1">失敗1</button> <button id="b2">失敗2</button> <button id="b4">失敗3</button></p>
-<p>是剛開始的想法 1.是希望設定隱形的點讓蛇追 2.是利用位移來跑,但背景都被吃掉了 3.電腦快跑不動了</p>
+<strong>上課最印象深刻的有</strong><button id="aaa">紅點</button> ,<button id="bbb">座標&nbsp;</button> , <button id="ccc">snake</button></p>
+<p><span>&nbsp; <strong>能學習到</strong>&nbsp; {&nbsp; 紅點:是學習<span style="color: #000000;">xy位移</span></span></p>
+<p><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {&nbsp; 座標:設定隨機參數</span></p>
+<p><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {&nbsp; snake:了解得分運作方式,和蛇移動原理</span></p>
+<p><strong>期末考</strong>:<button id="a1">final1</button>, <button id="a2">final2</button>,&nbsp;<button id="b3">final3</button>&nbsp;</p>
+<p><span>&nbsp; &nbsp; &nbsp;final 1:畫15x15的格子</span></p>
+<p><span>&nbsp; &nbsp; &nbsp;final 2:final 1進階在15x15的格子難繞U字走</span></p>
+<p><span>&nbsp; &nbsp; &nbsp;final 3:final 2進階先順時針繞一圈，在尋找其他果子</span></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>泡沫排序法排位置</strong>:<b>從陣列的最前面開始，一次比較陣列中兩兩相鄰的元素，然後根據大小將它們調換順序，大的移到後面</b></p>
+<p>而<button id="b1">失敗1</button>, <button id="b2">失敗2</button>, <button id="b4">失敗3</button></p>
+<p><span><strong>失敗原因</strong>:&nbsp; 失敗1</span>.是希望設定隱形的果字讓蛇追<span>但不好設計</span>。&nbsp;</p>
+<p><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;失敗2</span>.是利用位移來跑，但背景都被吃掉了，不好更改。</p>
+<p><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;失敗3</span>.想法好但沒有簡單化電腦快跑不動了，只能應付。</p>
+<p><span><strong>失敗得到的教訓</strong>:更了解到基礎運作，雖然沒有好到自己憑空打，但根據類似我能做出接近預期的東西</span>原本想說要放棄的但還好後面我有保持住理性，這學會了對我又有更進一步了解電腦判斷方式。</p>
+<p></p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor" style="width: 600px; height: 300px;"></div>
 <p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
@@ -207,8 +218,6 @@ run()
 <p></p>
 <!-- 執行與清除按鈕開始 -->
 <p><button id="kw_run">Run</button> <button id="kw_show_console">Output</button> <button id="kw_clear_console">清除輸出區</button><button id="clear_bd">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
-<p><button id="asd">按鈕名字</button></p>
-<!-- 執行與清除按鈕結束 -->
 <p></p>
 <!-- 程式執行 ouput 區 -->
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console"></textarea></div>
