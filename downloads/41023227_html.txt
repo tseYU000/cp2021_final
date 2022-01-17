@@ -41,7 +41,7 @@ function doSave(storage_id, filename){
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 </p>
-<p><button id="cube">cube</button><button id="bottoncube">cube-b</button><button id="add1to100">add 1 to 100</button><button id="W13">W13</button><button id="p261">2.6-1</button><button id="rocflag">ROC flag</button><button id="final1">final1</button></p>
+<p><button id="cube">cube</button><button id="bottoncube">cube-b</button><button id="add1to100">add 1 to 100</button><button id="W13">W13</button><button id="p261">2.6-1</button><button id="rocflag">ROC flag</button><button id="final1">final1</button><button id="final2">final2</button><button id="final3">final3</button></p>
 <p><!-- ######################  editor1 開始 ###################### --></p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor1" style="width: 600px; height: 300px;"></div>
@@ -152,9 +152,19 @@ bottoncube = button2(bottoncube_url)
 doc["bottoncube"].bind('click', bottoncube.do)
 ################################## bottoncube end
 ################################# final1 start 
-final1_url = "https://gist.githubusercontent.com/41023226/b3d3e11c3092fc7419232091c87dd60d/raw/55adf21455adabd7bed185c908e030e070c8c81c/final1"
+final1_url = "https://gist.githubusercontent.com/ken6003/27cf154aa55b33b653578f784f2f5e25/raw/e112c7002183e40e3cea6310314dea0ec4ce8e34/final1"
 final1 = button2(final1_url)
 doc["final1"].bind('click', final1.do)
 ################################## final1 end
+################################# final2 start 
+final2_url = "https://gist.githubusercontent.com/ken6003/c17a446d93e675ae9889f2280805a5f9/raw/9bc1bce688091158456cda0b32de047d8212789c/final2"
+final2 = button2(final2_url)
+doc["final2"].bind('click', final2.do)
+################################## final2 end
+################################# final3 start 
+final3_url = "https://gist.githubusercontent.com/ken6003/5179c2e6d89efe44f70befc3c34ff9ce/raw/de585fa871a97c2fb69ddabdcb9785d824e7beae/final3"
+final3 = button2(final3_url)
+doc["final3"].bind('click', final3.do)
+################################## final3 end
 // ]]></script>
 </p>
