@@ -1,4 +1,8 @@
 <h3>41023126</h3>
+<p>1.在Snake和final2~3中都要先設定參數</p>
+<p>2.利用平面座標(x,y)的觀念，去設定方向</p>
+<p>3.在利用for迴圈和<span>&nbsp;if、elif、else的技巧製作程式</span></p>
+<p></p>
 <!-- 導入 brython 程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
@@ -78,7 +82,7 @@ doc['kw_show_console'].bind('click', Ace.show_console)
 doc['kw_clear_console'].bind('click', Ace.clear_console)
 doc['clear_bd'].bind('click', clear_bd)
 
-snake_qwe_url = "https://gist.githubusercontent.com/41023126/ad8ea9f783335ad994aa2113cb33f658/raw/f1d8dc9b3af63adc94f0a8416675a957329ee3b7/%25E8%2587%25AA%25E5%258B%2595%25E8%25B2%25AA%25E9%25A3%259F%25E8%259B%2587"
+snake_qwe_url = "https://gist.githubusercontent.com/41023126/ad8ea9f783335ad994aa2113cb33f658/raw/63e98ad4b61242898ba85ae7d1fc15b5cbc39056/%25E8%2587%25AA%25E5%258B%2595%25E8%25B2%25AA%25E9%25A3%259F%25E8%259B%2587"
  # 從 gist 取得程式碼
 snake_wq = open(snake_qwe_url).read()
 
@@ -113,7 +117,7 @@ def final3_inp(ev):
 # id 為 "final3" 的按鈕點按時, 執行 chec_inp 方法
 doc["final3"].bind('click', final3_inp)
 
-final10_qwe_url = "https://gist.githubusercontent.com/41023126/255c10b90bb7a6795cf8446e2dcf306f/raw/6717aff614b4f024240c87400a660fd8f5590f0a/final3"
+final10_qwe_url = "https://gist.githubusercontent.com/41023126/255c10b90bb7a6795cf8446e2dcf306f/raw/9ef05151a12e3815202574ca0bcdbe63b85cf142/final3"
  # 從 gist 取得程式碼
 final10_wq = open(final10_qwe_url).read()
 def final10_inp(ev):
@@ -167,3 +171,5 @@ run()
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 </p>
+<p>遇到的錯誤:叫錯函式庫、設定按鈕程式id搞到亂掉</p>
+<p>期末心得:我是到大學遇到這個課程，才開始去研究程式語言，在高職的時候只有學自動化才會遇到程式，所以上大學遇到這門課，一開始真的讓我很頭痛，什麼基礎都沒有就要開始寫程式，讓我感覺到我到底在做時麼的感覺，作業都只能吃抄別人的，甚麼都看不懂，而現在看得懂同學們打的程式，但是我要自己打出程式，每次都會卡關，要看著別人的程式才會發現問題出在哪，例如:忘記標(:)、或是參數設錯、<span>搞錯變數的資料類別，叫錯函式等等，我想打了那麼多的程式，對於程式已經有更多的了解，但是還有一個大問題，就是英文不太好，很多的資料都是用英文寫的，對於程式和英文都有很大的學習空間。</span></p>
