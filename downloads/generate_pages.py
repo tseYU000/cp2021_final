@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 repo_path = "./../"
 config_dir = repo_path + "/config/"
 class Init(object):
-    site_title = "Final Project"
+    site_title = "2021 計算機程式課程期末評分網站"
 def file_get_contents(filename):
     
     """Return filename content
