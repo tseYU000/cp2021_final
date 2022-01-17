@@ -1,4 +1,4 @@
-<h3>41023153 FINAL</h3>
+<h3>41023153</h3>
 <p></p>
 <!-- 導入 brython 程式庫 -->
 <script src="/static/brython.js"></script>
