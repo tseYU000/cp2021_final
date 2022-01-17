@@ -1,5 +1,5 @@
 <h3>41023120</h3>
-<p><button id="asd">列出十個座標</button><button id="snake">snake</button><button id="rad">HW1-1</button><button id="autosnake">autosnake</button> <button id="HW">HW1-2</button> <button id="test">Final1</button> <button id="test2">Final2</button><button id="test3">Final3</button> <!-- 導入 brython 程式庫 --></p>
+<p><button id="asd">列出十個座標</button><button id="snake">snake</button><button id="rad">HW1-1</button><button id="autosnake">autosnake</button> <button id="HW">HW1-2</button> <button id="test">Final1</button> <button id="test2">Final2</button> <button id="test31">Final3</button> <button id="test32">Final3-1</button> <button id="test3">Final3-2</button> <!-- 導入 brython 程式庫 --></p>
 <p>
 <script src="/static/brython.js">// <![CDATA[
 
@@ -157,6 +157,27 @@ def test3_inp(ev):
      #Ace.run()
 # id 為 "asd" 的按鈕點按時, 執行 chec_inp 方法
 doc["test3"].bind('click', test3_inp)
+test31_qwe_url = "https://gist.githubusercontent.com/41023120/2212908f398dd5166a3f32db09e2ba3c/raw/4477a0dc5f55d6ea391906ad67ca65bb9b4a430f/3"
+# 從 gist 取得程式碼
+test31_wq = open(test31_qwe_url).read()
+def test31_inp(ev):
+     Ace.editor.setValue(test31_wq)
+     Ace.editor.scrollToRow(0)
+     Ace.editor.gotoLine(0)
+     #Ace.run()
+# id 為 "asd" 的按鈕點按時, 執行 chec_inp 方法
+doc["test31"].bind('click', test31_inp)
+test32_qwe_url = "https://gist.githubusercontent.com/41023120/0611f3910b842314b0bf4a11771478f1/raw/ae2acf628738adaf2013a1aae99c7d1020da3322/4"
+# 從 gist 取得程式碼
+test32_wq = open(test32_qwe_url).read()
+def test32_inp(ev):
+     Ace.editor.setValue(test32_wq)
+     Ace.editor.scrollToRow(0)
+     Ace.editor.gotoLine(0)
+     #Ace.run()
+# id 為 "asd" 的按鈕點按時, 執行 chec_inp 方法
+doc["test32"].bind('click', test32_inp)
+
 
 # 呼叫函式執行
 run()
@@ -184,7 +205,7 @@ run()
 <div></div>
 <div>Final1:<span><a href="https://stream.new/v/02oKn8RG1UttpJCSjFDAnjr3tm9ca5fLC5dpeL89KCjA">https://stream.new/v/02oKn8RG1UttpJCSjFDAnjr3tm9ca5fLC5dpeL89KCjA</a></span></div>
 <div>Final2:<span><a href="https://stream.new/v/L8hnF9hv01Vzk7WNq37KTm00l01ZfH011Cnl2wXIyG4bkVM">https://stream.new/v/L8hnF9hv01Vzk7WNq37KTm00l01ZfH011Cnl2wXIyG4bkVM</a></span></div>
-<div><span></span></div>
+<div><span></span>Final3-2製作心得:<span>期末考比上一次多出了好多東西變好難，Final3(順時鐘)自己有寫出來, Final3-1(把吃果實的程式加進去跟隨機亂數產生 5 個果實泡沫排序法)和Final3-2(增加往果實方向移動)都是詢問和參考同學的程式後才會,感謝同學教導。</span></div>
 <div>期末心得:從一開始接觸到現在,前面很多的程式都看不懂,建倉儲到建立學習網站都是看著影片一步一步做的,從第一個程式紅點只能看懂大概,到現在有了邏輯但是有些指令的用法還很生疏。</div>
 <div></div>
 <div></div>
