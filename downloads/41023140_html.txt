@@ -1,8 +1,4 @@
 <h3>41023140</h3>
-<p><a href="/downloads/w12demo.txt">w12demo.txt</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China#Construction_details">ROC 國旗規格</a>.</p>
-<p><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%97%97#%E8%A7%84%E6%A0%BC">PROC 國旗規格</a> - 可以根據此規格定義, 新增 <button id="procflas">PROC flag</button> 按鈕.</p>
-<p><a href="https://en.wikipedia.org/wiki/Flag_of_the_United_States#Specifications">USA 國旗規格</a> - 可以根據此規格定義, 新增 <button id="usaflag">USA flag</button> 按鈕.</p>
 <!-- 導入 brython 程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
@@ -41,7 +37,7 @@ function doSave(storage_id, filename){
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 </p>
-<p><button id="add1to100">add 1 to 100</button><button id="p261">p261</button><button id="rocflag">ROC flag</button><button id="final1">final1</button><button id="final2">final2</button></p>
+<p><button id="add1to100">add 1 to 100</button><button id="p261">p261</button><button id="rocflag">ROC flag</button><button id="final1">final1</button><button id="final2">final2</button><button id="final3_1">final3_1</button><button id="final3_2">final3_2</button></p>
 <p><!-- ######################  editor1 開始 ###################### --></p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor1" style="width: 600px; height: 300px;"></div>
@@ -57,10 +53,10 @@ function doSave(storage_id, filename){
 <p><!-- 程式執行 ouput 區 --></p>
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console1"></textarea></div>
 <p><!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 --></p>
-<!-- 這裡的畫布 id 為 brython_div -->
+<p><!-- 這裡的畫布 id 為 brython_div --></p>
 <div id="brython_div"></div>
 <p><!-- ######################  editor1 結束 ###################### --></p>
-<!-- 以下可以開始利用 editor1 的設定編寫對應 Brython 程式 -->
+<p><!-- 以下可以開始利用 editor1 的設定編寫對應 Brython 程式 -->
 <script type="text/python3">// <![CDATA[
 from browser import document as doc
 import ace
@@ -98,7 +94,7 @@ doc['clear_bd1'].bind('click', clear_bd1)
 # 呼叫函式執行
 run1()
 // ]]></script>
-<!-- 以上為內建程式, 頁面可透過 ?src=gist_url 執行 -->
+<!-- 以上為內建程式, 頁面可透過 ?src=gist_url 執行 --></p>
 <p><!-- add 1 to 100 開始 -->
 <script type="text/python3">// <![CDATA[
 from browser import document as doc
@@ -137,14 +133,24 @@ rocflag = button2(rocflag_url)
 doc["rocflag"].bind("click", rocflag.do)
 ################################## rocflag end
 ################################## final1 start
-final1_url = "https://gist.githubusercontent.com/dan41023140/eb769f52deab1c27015f0445bc3df8d2/raw/2dbed5d96858c719f70a35f2ebaec4697caa2dc3/final1"
+final1_url = "https://gist.githubusercontent.com/dan41023140/eb769f52deab1c27015f0445bc3df8d2/raw/66966a5c8ed37478c1a372ca9128ab7135ffa71d/final1.py"
 final1 = button2(final1_url)
 doc["final1"].bind("click", final1.do)
 ################################## final1 end
 ################################## final2 start
-final2_url = "https://gist.githubusercontent.com/dan41023140/6719f1c34e7e1f624435edcedd05c97f/raw/bca4f7aae54a83cf46125c8b6bacc4e45f000c27/final2"
+final2_url = "https://gist.githubusercontent.com/dan41023140/6719f1c34e7e1f624435edcedd05c97f/raw/9d52088ed923ec4334f01d78ab0698cf123cd515/final2.py"
 final2 = button2(final2_url)
 doc["final2"].bind("click", final2.do)
 ################################## final2 end
+################################## final3_1 start
+final3_1_url = "https://gist.githubusercontent.com/dan41023140/37d8c1df8a4d436cdeb29e37ba568572/raw/34997880939c55d7811140f7b322836e2bd473c5/final3-1.py"
+final3_1 = button2(final3_1_url)
+doc["final3_1"].bind("click", final3_1.do)
+################################## final3_1 end
+################################## final3_2 start
+final3_2_url = "https://gist.githubusercontent.com/dan41023140/8a74564ca960eb6fd90a876cee6ff89e/raw/561242beb2327252d07d5c36045b21889efdf4a3/final3-2.py"
+final3_2 = button2(final3_2_url)
+doc["final3_2"].bind("click", final3_2.do)
+################################## final3_2 end
 // ]]></script>
 </p>
